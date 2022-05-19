@@ -1,6 +1,6 @@
 This is the webpage for the 2-day version of the course Online Experiments for Language Scientists, set up for the Deparment of English Language and Linguistics at the University of Birmingham, May 2022. 
 
-The course is taught by [Kenny Smith](http://www.lel.ed.ac.uk/~kenny/). The best way to get in touch with me before/after the course is by email to [kenny.smith@ed.ac.uk](mailto:kenny.smith@ed.ac.uk). My colleague in Edinburgh, our tech guru and javascript whizz Alisdair Tullo, also set up the server we'll be using on the course, and normally teaches this stuff with me.
+The course is taught by [Kenny Smith](http://www.lel.ed.ac.uk/~kenny/). The best way to get in touch with me before/after the course is by email to [kenny.smith@ed.ac.uk](mailto:kenny.smith@ed.ac.uk). My colleague in Edinburgh, our tech guru and javascript whizz [Alisdair Tullo](https://www.ed.ac.uk/profile/alisdair-tullo/), also set up the server we'll be using on the course, and normally teaches this stuff with me.
 
 For a longer version of the course, see e.g. [my Autumn 2021 semester-long course at Edinburgh](https://kennysmithed.github.io/oels2021/).
 
@@ -23,7 +23,7 @@ Prior to the course starting, you'll need to do some preparatory work - reading 
 
 Once the course starts, each session will start with a short lecture/Q&A and a programming practical.
 
-Each lecture comes with an associated reading (a paper plus some accompanying notes of mine) - you don't have to have done the reading, I'll summarise the content in the lecture, but the summary will necessarily be brief so if you have time to look at the papers before the course that would be great.
+Each lecture comes with an associated reading (a paper plus some accompanying notes of mine) - you don't have to read the papers (and that is definitely less important than doing the practical preparation), I'll summarise the content in the lecture.
 
 The programming assignment involves looking at (and editing) some code which implements a language-related experiment; we'll use most of our time as lab time to work on the programming task and get help with programming difficulties or questions you have.
 
