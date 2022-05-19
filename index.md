@@ -2,7 +2,7 @@ This is the webpage for the 2-day version of the course Online Experiments for L
 
 The course is taught by [Kenny Smith](http://www.lel.ed.ac.uk/~kenny/). The best way to get in touch with me before/after the course is by email to [kenny.smith@ed.ac.uk](mailto:kenny.smith@ed.ac.uk). My colleague in Edinburgh, our tech guru and javascript whizz [Alisdair Tullo](https://tullo.co.uk/alisdair/), also set up the server we'll be using on the course, and normally teaches this stuff with me.
 
-For a longer version of the course, see e.g. [my Autumn 2021 semester-long course at Edinburgh](https://kennysmithed.github.io/oels2021/).
+For a longer version of the course, see e.g. [our Autumn 2021 semester-long course at Edinburgh](https://kennysmithed.github.io/oels2021/).
 
 ## Course summary
 
