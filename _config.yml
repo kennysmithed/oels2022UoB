@@ -1,0 +1,10 @@
+theme: jekyll-theme-midnight
+title: Online Experiments for Language Scientists
+description: University of Birmingham, May 2022
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - index.md
