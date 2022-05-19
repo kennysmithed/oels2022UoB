@@ -1,6 +1,6 @@
 This is the webpage for the 2-day version of the course Online Experiments for Language Scientists, set up for the Deparment of English Language and Linguistics at the University of Birmingham, May 2022. 
 
-The course is taught by [Kenny Smith](http://www.lel.ed.ac.uk/~kenny/). The best way to get in touch with me before/after the course is by email to [kenny.smith@ed.ac.uk](mailto:kenny.smith@ed.ac.uk). My colleague in Edinburgh, our tech guru and javascript whizz [Alisdair Tullo](https://www.ed.ac.uk/profile/alisdair-tullo/), also set up the server we'll be using on the course, and normally teaches this stuff with me.
+The course is taught by [Kenny Smith](http://www.lel.ed.ac.uk/~kenny/). The best way to get in touch with me before/after the course is by email to [kenny.smith@ed.ac.uk](mailto:kenny.smith@ed.ac.uk). My colleague in Edinburgh, our tech guru and javascript whizz [Alisdair Tullo](https://tullo.co.uk/alisdair/), also set up the server we'll be using on the course, and normally teaches this stuff with me.
 
 For a longer version of the course, see e.g. [my Autumn 2021 semester-long course at Edinburgh](https://kennysmithed.github.io/oels2021/).
 
@@ -19,7 +19,7 @@ Thursday and Friday 26th-27th May 2022, 9.30am-12.30pm and 1.30pm-4.30pm.
 
 ## Course Materials
 
-Prior to the course starting, you'll need to do some preparatory work - reading a couple of short blog-type summaries I think will be useful to help set the scene and then (more important), working through some basic preparation by working through some of the [Online Experiments with jsPsych](https://softdev.ppls.ed.ac.uk/online_experiments/index.html) tutorial written by my colleague at Edinburgh, [Alisdair Tullo](https://www.ed.ac.uk/profile/alisdair-tullo/). Get as far as you can with this - and don't worry if you get stuck, I can help you get unstuck in the practicals when the course starts! If you get through this I'd also encourage you to work through as much of the Day 1 materials as you can, since it'll mean we can make the most of the face-to-face time we have during the course proper.
+Prior to the course starting, you'll need to do some preparatory work - reading a couple of short blog-type summaries I think will be useful to help set the scene and then (more important), working through some basic preparation by working through some of the [Online Experiments with jsPsych](https://softdev.ppls.ed.ac.uk/online_experiments/index.html) tutorial written by my colleague at Edinburgh, [Alisdair Tullo](https://tullo.co.uk/alisdair/). Get as far as you can with this - and don't worry if you get stuck, I can help you get unstuck in the practicals when the course starts! If you get through this I'd also encourage you to work through as much of the Day 1 materials as you can, since it'll mean we can make the most of the face-to-face time we have during the course proper.
 
 Once the course starts, each session will start with a short lecture/Q&A and a programming practical.
 
