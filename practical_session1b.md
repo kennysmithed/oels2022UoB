@@ -26,10 +26,11 @@ The code starts by laying out the grammaticality judgment trials. Each judgment 
 
 ```js
 var judgment_trial_1 = {
-    type: 'html-keyboard-response',
-    stimulus: "Where did Blake buy the hat?",
-    prompt: "<p><em>Could this sentence be spoken by a native speaker of English? Press y or n</em></p>",
-    choices: ['y','n']
+  type: "html-keyboard-response",
+  stimulus: "Where did Blake buy the hat?",
+  prompt:
+    "<p><em>Could this sentence be spoken by a native speaker of English? Press y or n</em></p>",
+  choices: ["y", "n"],
 };
 ```
 
@@ -41,17 +42,26 @@ That's basically the only interesting part of the code! The rest is the consent,
 
 Once all the various trials are defined, we can stick them together in a timeline for the experiment. The timeline is very simple and is just a list of all the trials we have created up to this point:
 ```js
-var full_timeline = [consent_screen,instruction_screen_1,instruction_screen_2,
-                    judgment_trial_1,judgment_trial_2,judgment_trial_3,judgment_trial_4,
-                    final_screen];
+var full_timeline = [
+  consent_screen,
+  instruction_screen_1,
+  instruction_screen_2,
+  judgment_trial_1,
+  judgment_trial_2,
+  judgment_trial_3,
+  judgment_trial_4,
+  final_screen,
+];
 ```
 
-Then to run the experiment we call `jsPsych.init` with this `full_timeline` variable we have created. We also tell it to show the raw data on-screen at the end of the experiment (using the `on_finish` parameter of `jsPsych.init`). Obviously in a real experiment you would save the data rather than just showing it back to the participant, we'll show you how to do that later in the course!
+Then to run the experiment we call `jsPsych.init` with this `full_timeline` variable we have created. As before also tell it to show the raw data on-screen at the end of the experiment (using the `on_finish` parameter of `jsPsych.init`). 
 
 ```js
 jsPsych.init({
-    timeline: full_timeline,
-    on_finish: function(){jsPsych.data.displayData('csv')}
+  timeline: full_timeline,
+  on_finish: function () {
+    jsPsych.data.displayData("csv");
+  },
 });
 ```
 
