@@ -31,7 +31,7 @@ There are also some post-course materials intended to give you some additional t
 
 ### Preparatory materials
 
-At a minimum, do your best to work through the following preparatory materials.
+Do your best to work through the following preparatory materials.
 
 - *Scientific content:* lab vs online data collection
 - *Technical content:* jspsych basics, intro to crowdsourcing platforms
