@@ -38,7 +38,7 @@ Do your best to work through the following preparatory materials.
 - [Reading](reading_pre.md)
 - [Programming task](practical_pre.md)
 
-### Day 1, morning: Co-speech gesture, grammaticality judgments
+### Thursday morning: Co-speech gesture, grammaticality judgments
 
 Slightly ambitiously the plan is to cram a couple of basic experimental paradigms into the first session - hopefully the paradigms and the code are simple enough that we can manage this, but if not we can just bleed over into the afternoon and compress later stuff.
 
@@ -50,32 +50,32 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 - [Programming task part 2](practical_session1b.md)
 
 
-### Day 1, afternoon: Word learning / frequency learning
+### Thursday afternoon: Word learning / frequency learning
 
 - *Scientific content:* probability matching and regularisation
 - *Technical content:* using trial data for contingent trials; filtering and saving data; randomisation within and across trials
-- [Reading](reading_session2.md)
-- [Programming task](practical_session2.md)
+- [Reading](reading_session2.md)*not ready yet*
+- [Programming task](practical_session2.md)*not ready yet*
 
-### Day 2, morning: Audio stimuli
+### Friday morning: Audio stimuli
 
 - *Scientific content:* speech perception, social influences on phonetic adaptation
 - *Technical content:* Audio, trial data again, saving data trial by trial
-- [Reading](reading_session3.md)
-- [Programming task](practical_session3.md)
+- [Reading](reading_session3.md)*not ready yet*
+- [Programming task](practical_session3.md)*not ready yet*
 
-### Day 2, afternoon: Confederate priming
+### Friday afternoon: Confederate priming
 
 - *Scientific content:* syntactic priming and alignment
 - *Technical content:*  Audio recording, more randomisation stuff, custom preload lists, reading trial lists from CSV
-- [Reading](reading_session4.md)
-- [Programming task](practical_session4.md)
+- [Reading](reading_session4.md)*not ready yet*
+- [Programming task](practical_session4.md)*not ready yet*
 
 ### Post-course materials: Getting your experiment online
 
 - *Scientific content:* None!
 - *Technical content:* How to set up a server, launch and pay participants, manage qualifications, etc
-- [Reading: how to get your experiment online](reading_post.md)
+- [Reading: how to get your experiment online](reading_post.md)*not ready yet*
 
 
 ## Re-use
