@@ -56,13 +56,13 @@ Check that you are selecting SFTP in the cyberduck dropdown menu - i.e. for me i
 
 ### Where do I put my Hello World code on the server?
 
-For the hello world demo, you can just run the code on your own computer, by opening the experiment.html file in a browser. But if you want to test it on the server, you need to copy your code into your public_html folder on the tullo.co.uk server. You want a folder called e.g. "hello" which contains experiment.html and the jspsych folder, e.g. something like this:
+For the hello world demo, you can just run the code on your own computer, by opening the experiment.html file in a browser. But if you want to test it on the server, you need to copy your code into your public_html folder on the tullo.co.uk server. You want a folder called e.g. "hello_world" which contains experiment.html and the jspsych folder, e.g. something like this:
 
 ![cuberduck window](images/hello_world_directory_structure.png)
 
 ### How do I run the Hello World code once it's on the server?
 
-Once you have put your code on the tullo.co.uk server, you might be a bit puzzled about how to open it, and have tried e.g. clicking on the experiment.html file in cyberduck. All that will do is try to download the file back to your computer - cyberduck is for moving files about. The way to access your experiment once it's on the server is to open a web browser, e.g. chrome, and put something like http://tullo.co.uk/~USER/hello/experiment.html in the address bar, where USER is the username I gave you. Note that this assumes your code is in your `public_html` folder, in a folder called `hello` - if you are using different directory names on the server, your url might be a little different. Also note the tilde (little squiggle character) in front of your username.
+Once you have put your code on the tullo.co.uk server, you might be a bit puzzled about how to open it, and have tried e.g. clicking on the experiment.html file in cyberduck. All that will do is try to download the file back to your computer - cyberduck is for moving files about. The way to access your experiment once it's on the server is to open a web browser, e.g. chrome, and put something like `https://tullo.co.uk/~USER/hello_world/experiment.html` in the address bar, where USER is the username I gave you (e.g. for me this demo is at [`https://tullo.co.uk/~kenny/hello_world/experiment.html`](https://tullo.co.uk/~kenny/hello_world/experiment.html), you can click that link if you want to see it!). Note that this assumes your code is in your `public_html` folder, in a folder called `hello_world` - if you are using different directory names on the server, your url might be a little different. Also note the tilde (little squiggle character) in front of your username.
 
 
 
