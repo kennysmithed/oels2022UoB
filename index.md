@@ -54,8 +54,8 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 
 - *Scientific content:* probability matching and regularisation
 - *Technical content:* using trial data for contingent trials; filtering and saving data; randomisation within and across trials
-- [Reading](reading_session2.md)
-- [Programming task](practical_session2.md)
+- [Reading](reading_session2.md)*K checking*
+- [Programming task](practical_session2.md)*K checking*
 
 ### Friday morning: Audio stimuli
 
