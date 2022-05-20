@@ -53,7 +53,7 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 ### Thursday afternoon: Word learning / frequency learning
 
 - *Scientific content:* probability matching and regularisation
-- *Technical content:* using trial data for contingent trials; filtering and saving data; randomisation within and across trials
+- *Technical content:* randomisation within and across trials; using trial data for contingent trials; filtering and saving data 
 - [Reading](reading_session2.md)*K checking*
 - [Programming task](practical_session2.md)*K checking*
 
