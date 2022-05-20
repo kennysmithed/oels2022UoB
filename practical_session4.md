@@ -68,7 +68,7 @@ to a file on the server (in `server_data/audio`) called filename_prefix_recordin
 
 `stop_recording()` is a function which stops the current audio recording, triggering saving of the audio file, and also increments the `recording_counter` so that the next recording has a different counter value and therefore a different file name.
 
-One important note about recording audio: *this will only work if your experiment is delivered via secure http (the URL starts with https, you see the little padlock in the address bar). Modern browsers are rightly careful about allowing unsecure sources to access you mic/camera (since someone might listen in), so unless your website is hosted somewhere with an SSL certificate and set up to serve over https, audio (or video) recording won't work. Because he knows what he's doing Alisdair has has set up tullo.co.uk appropriately, something to look out for (or raise with your techies) when you come to set up your own server.
+One important note about recording audio: *this will only work if your experiment is delivered via secure http* (the URL starts with https, you see the little padlock in the address bar). Modern browsers are rightly careful about allowing unsecure sources to access you mic/camera (since someone might listen in), so unless your website is hosted somewhere with an SSL certificate and set up to serve over https, audio (or video) recording won't work. Because he knows what he's doing Alisdair has has set up tullo.co.uk appropriately, something to look out for (or raise with your techies) when you come to set up your own server.
 
 ### Random elements of the experiment
 
