@@ -62,7 +62,7 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 - *Scientific content:* speech perception, social influences on phonetic adaptation
 - *Technical content:* Audio, trial data again, saving data trial by trial
 - [Reading](reading_session3.md)
-- [Programming task](practical_session3.md)*not ready yet*
+- [Programming task](practical_session3.md)
 
 ### Friday afternoon: Confederate priming
 
