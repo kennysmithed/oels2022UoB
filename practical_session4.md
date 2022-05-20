@@ -68,6 +68,8 @@ to a file on the server (in `server_data/audio`) called filename_prefix_recordin
 
 `stop_recording()` is a function which stops the current audio recording, triggering saving of the audio file, and also increments the `recording_counter` so that the next recording has a different counter value and therefore a different file name.
 
+One important note about recording audio: *this will only work if your experiment is delivered via secure http (the URL starts with https, you see the little padlock in the address bar). Modern browsers are rightly careful about allowing unsecure sources to access you mic/camera (since someone might listen in), so unless your website is hosted somewhere with an SSL certificate and set up to serve over https, audio (or video) recording won't work. Because he knows what he's doing Alisdair has has set up tullo.co.uk appropriately, something to look out for (or raise with your techies) when you come to set up your own server.
+
 ### Random elements of the experiment
 
 The first part of `confederate_priming.js` is comments on the audio recording code (for human reading, the code ignores these) and then some code for saving our data trial by trial - the function `save_confederate_priming_data` saves trial data in the same way as the `save_perceptual_learning_data` function from last week, and you'll see it used in the functions below. Since you have seen similar functions before, I'll skip these and jump to the new code - there is a little bit of added complexity in there in that we want to record slightly different data for our two trial types, but you can look at the code and comments if you are interested.
