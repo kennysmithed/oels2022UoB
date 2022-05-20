@@ -27,7 +27,7 @@ Assuming you have the directory structure all right, this code should run on you
 
 ![suggested directory structure](images/wl_directory_structure.png)
 
-If your directory structure is the same as mine the url for your experiment will be http://tullo.co.uk/~USERNAME/online_experiments_practicals/word_learning/word_learning.html. Note that the code that saves the data to the server will only work if your code is actually running on the tullo.co.uk server - if you are running it on your own computer the data will not save anywhere, although it will still be shown on-screen. This is because your personal computer isn't running anything that can handle POST commands and process them with PHP, which is what is involved in saving data - those things are all set up on the server for you.
+If your directory structure is the same as mine the url for your experiment will be https://tullo.co.uk/~USERNAME/online_experiments_practicals/word_learning/word_learning.html. Note that the code that saves the data to the server will only work if your code is actually running on the tullo.co.uk server - if you are running it on your own computer the data will not save anywhere, although it will still be shown on-screen. This is because your personal computer isn't running anything that can handle POST commands and process them with PHP, which is what is involved in saving data - those things are all set up on the server for you.
 
 First, get the code and run through it so you can check it runs, and you can see what it does. Then take a look at the HTML and js files in your code editor (e.g. Visual Studio Code).
 

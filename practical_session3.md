@@ -22,7 +22,7 @@ You need a bunch of files for this experiment - as per last week, an html file, 
 
 - <a href="code/perceptual_learning.zip" download> Download perceptual_learning.zip</a>
 
-This code should run on your local computer just by opening the html file in the usual way, but as per last week it won't save any data for you unless you are running it on the tullo.co.uk server, so I suggest uploading it there (if your directory structure is as I have been using so far, where all the exercises are in a folder called `online_experiments_practicals`, then the url for your experiment will be http://tullo.co.uk/~USERNAME/online_experiments_practicals/perceptual_learning/perceptual_learning.html).
+This code should run on your local computer just by opening the html file in the usual way, but as per last week it won't save any data for you unless you are running it on the tullo.co.uk server, so I suggest uploading it there (if your directory structure is as I have been using so far, where all the exercises are in a folder called `online_experiments_practicals`, then the url for your experiment will be https://tullo.co.uk/~USERNAME/online_experiments_practicals/perceptual_learning/perceptual_learning.html).
 
 First, get the code and run through it so you can check it runs, and you can see what it does. Also check it saves data for you in your `server_data` folder (if that file isn't there, try clicking the "Refresh" button in cyberduck to refresh the file list). Then take a look at the html and js files in your code editor (e.g. Visual Studio Code), and read on.
 
