@@ -90,6 +90,7 @@ Then if we run that `simple_observation_timeline` we will get the trial sequence
 
 A couple of things to note here.
 - My `choices` are set to `[]` (an empty array), which means the participant cannot provide a response (there are no buttons shown on screen) - that's fine, since we just want them to watch and learn on these observation trials.
+- Because there are no `choices` the participant can't end the trial - we control thje trial duration with the `trial_duration` parameter (which is in ms).
 - The `stimulus` parameter points to a particular image file, in the `images` folder, which you will see matches the directory structure I am using. Keeping your stimuli separate from your code keeps things nice and neat and is essential if you are building an experiment with hundreds or thousands of stimuli - you don't want to be scrolling through all of those hunting for a single javascript file every time you need to edit your code.
 - I am using the `prompt` to show the label beneath the object. The Ferdinand paper shows the label *above* the object, but there is no built-in jsPsych plugin that does that, so rather than hacking about with the plugin code I am just showing the label underneath - editing the plugin to reposition the prompt is easy, but it surely doesn't matter whether the prompt is above or below the image so we'll stick with the default!
 
@@ -106,12 +107,12 @@ var observation_trial_object4_only = {
 ```
 Note that just including `prompt: " "` doesn't work, the code correctly identifies the fact that the prompt is empty, we have to include some content there. 
 
-The more important problem with this simple approach is that building this *flat* timeline is going to be very laborious and redundant for an experiment involving more than a few observation trials, and quite error prone (even just writing out this little example I forgot to change the `prompt` for the second trial from "buv" to "cal", which might end up being an important mistake in a frequency-learning experiment). Worse, there is no easy way to randomise the trial list without hopelessly scrambling everything - if I just randomise this flat trial list there's nothing to stop the object-only subtrials coming *after* the subtrials with the label, all the labels coming before all the observation parts, etc. Conceptually, our experiment consists of 2 trials each with 2 parts, and our flat timeline doesn't capture that.
+The more important problem with this simple approach is that building this timeline is going to be very laborious and redundant for an experiment involving more than a few observation trials, and quite error prone (even just writing out this little example I forgot to change the `prompt` for the second trial from "buv" to "cal", which might end up being an important mistake in a frequency-learning experiment). Worse, there is no easy way to randomise the trial list without hopelessly scrambling everything - if I just randomise this flat trial list there's nothing to stop the object-only subtrials coming *after* the subtrials with the label, all the labels coming before all the observation parts, etc. Conceptually, our experiment consists of 2 trials each with 2 parts, and our flat timeline doesn't capture that.
 
 The solution to this is to use nested timelines to tie together the sub-parts of a single trial. Nested timelines are explained in [the relevant part of the jsPsych documentation](https://www.jspsych.org/6.3/overview/timeline/#nested-timelines): we create a trial which has its own timeline, and then that timeline is expanded into a series of trials, one trial per item
 in the timeline (so each of these complex trials functions a bit like its own stand-alone embedded experiment with its own timeline). We can use nested timelines to form a more compressed representation of the long trial sequence above and get rid of some of the redundancy.
 
-TUsing nested timelines means we can capture the code above as 2 trials (not 4), each with a nested timeline:
+Using nested timelines means we can capture the code above as 2 trials (not 4), each with a nested timeline:
 
 ```js
 var observation_trial_object4_buv = {
@@ -148,13 +149,15 @@ var simple_observation_timeline = [
 ];
 ```
 
-Each trial has a nested timeline - the top level specifies the common properties shared by all trials (`type`, `stimulus`, `choices`), then for each sub-trial in the nested timeline we specify the bits that vary (the first sub-trial for each word has a dummy prompt and a duration of 1000ms, the second has the label as the prompt and a longer duration). That's better, in that we could now randomise the order of our timeline without separating sub-trials from each other, but it still involves a lot of redundancy - everything about these two trials apart from the object image and the label is identical, but I still have to type out or copy-and-paste it all. Building a long list of trials like that is definitely do-able, but is probably quite error prone - to change the object image or word I have to jump into exactly the right spot in the nested timelines and change the right thing, and inevitably I will forget at some point or make a mistake. Plus it's an entirely mechanical process - if you know the image and the label it's obvious how to slot it into our trial template - and computers are good at doing mechanical stuff methodically, so it makes more sense to automate this.
+Each trial has a nested timeline - the top level specifies the common properties shared by all trials in the nested timeline (`type`, `stimulus`, `choices`), then for each sub-trial in the nested timeline we specify the bits that vary (the first sub-trial for each word has a dummy prompt and a duration of 1000ms, the second has the label as the prompt and a longer duration). 
+
+That's better, in that we could now randomise the order of our timeline without separating sub-trials from each other, but it still involves a lot of redundancy - everything about these two trials apart from the object image and the label is identical, but I still have to type out or copy-and-paste it all. Building a long list of trials like that is definitely do-able, but is probably quite error prone - to change the object image or word I have to jump into exactly the right spot in the nested timelines and change the right thing, and inevitably I will forget at some point or make a mistake. Plus it's an entirely mechanical process - if you know the image and the label it's obvious how to slot it into our trial template - and computers are good at doing mechanical stuff methodically, so it makes more sense to automate this.
 
 What we'll do is use a little bit of javascript and write a function which
 takes an object name and a label and slots that information into our trial template to build a trial, and returns that trial. The result is a function that builds a single observation trial for us in a neat, compartmentalised way. Here's the code:
 
 ```js
-ffunction make_observation_trial(object, label) {
+function make_observation_trial(object, label) {
   var object_filename = "images/" + object + ".jpg"; //build file name for the object
   trial = {
     type: "image-button-response",
