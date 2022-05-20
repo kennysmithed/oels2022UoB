@@ -110,7 +110,7 @@ var dill_trial = {
   on_start: function (trial) {
     var shuffled_image_choices = jsPsych.randomization.shuffle(trial.choices);
     trial.choices = shuffled_image_choices;
-    trial.data = { button_choices: shuffled_label_choices };
+    trial.data = { button_choices: shuffled_image_choices };
   },
 
   //at the end, use data.response to figure out
