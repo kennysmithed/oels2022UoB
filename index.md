@@ -75,7 +75,7 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 
 - *Scientific content:* None!
 - *Technical content:* How to set up a server, launch and pay participants, manage qualifications, etc
-- [Reading: how to get your experiment online](reading_post.md)*not ready yet*
+- [Reading: how to get your experiment online](reading_post.md)
 
 
 ## Re-use
