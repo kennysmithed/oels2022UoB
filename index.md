@@ -68,7 +68,7 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 
 - *Scientific content:* syntactic priming and alignment
 - *Technical content:*  Audio recording, more randomisation stuff, custom preload lists, reading trial lists from CSV
-- [Reading](reading_session4.md)*not ready yet*
+- [Reading](reading_session4.md)
 - [Programming task](practical_session4.md)*not ready yet*
 
 ### Post-course materials: Getting your experiment online
