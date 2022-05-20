@@ -221,7 +221,7 @@ var production_step1 = {
 };
 ```
 
-That is very simple, but the labels will always appear in the same order - buv on the left, cal on the right. That might be a problem - maybe people will be biased to click on one side, or maybe this will encourage them to always click on the same side and given very self-consistent responses just because they are being lazy. So we want to randomise the order of the buttons, and we want to do this *independently* for every trial, so that sometimes buv is on the left and sometimes it's on the right.
+That is very simple, but the labels will always appear in the same order - buv on the left, cal on the right. That might be a problem - maybe people will be biased to click on one side, or maybe this will encourage them to always click on the same side and give very self-consistent responses just because they are being lazy. So we want to randomise the order of the buttons, and we want to do this *independently* for every trial, so that sometimes buv is on the left and sometimes it's on the right.
 
 There are a couple of ways you could do this in jsPsych. I am going to do it using the `on_start` property of trials. This allows us to specify some code to run when the trial starts but before anything is displayed on screen, and importantly the stuff that happens in `on_start` can alter the other trial properties. Specifically, initially we'll start off with `choices` in a fixed order (it will complain if we try to leave `choices` unspecified, so we have to set it to *something*, it might as well be this, or we could do an empty array `[]` if you prefer) and then generate a random ordering of the labels in the `on_start`.
 
@@ -237,7 +237,7 @@ var production_step1 = {
 };
 ```
 
-Inside `on_start` we shuffle the two labels (using the another jspsych function, `jsPsych.randomization.shuffle`, which just shuffles an array - it will shuffle any array you give it, which is very handy) and then set the `trial.choices` parameter to that shuffled ordering - so by the time the participant actually sees the choices on the screen, `on_start` will already have done its work and the two buttons will appear in a randomised order.
+Inside `on_start` we shuffle the two labels (using the another jspsych function, `jsPsych.randomization.shuffle`, which just shuffles an array - it will shuffle any array you give it, which is very handy) and then set the trial's `choices` parameter to that shuffled ordering (by `trial.choices = ...`) - so by the time the participant actually sees the choices on the screen, `on_start` will already have done its work and the two buttons will appear in a randomised order.
 
 That will work, but we still haven't addressed the trickiest problem - how do we build the 2nd step of a production trial, where the label I select at step 1 is shown to me again for confirmation / to center my mouse? This is a pretty common thing to want to do - there are many experimental designs where you want to make behaviour at later trials depend on the participant's response, for example you might want to provide corrective feedback, repeat trials that a participant gets wrong, or (as in our case) show something that relates to their earlier response.
 
@@ -358,7 +358,7 @@ var observation_trials_oopsie = [
   final_screen
 ];
 ```
-But that is going to confuse jsPsych - it wants the experiment timeline to be a flat array of trials, and here we have actually given it an array consisting of some trials and some *arrays* of trials  (`observation_trials` and `production_trials` are themselves arrays), so it doesn't know what to do with it. Instead we have to use a built-in javascript function, `concat`, to concatenate (stick together) everything into a long flat array:
+But that is going to confuse jsPsych - it wants the experiment timeline to be an array of trials, and here we have actually given it an array consisting of some trials and some *arrays* of trials  (`observation_trials` and `production_trials` are themselves arrays), so it doesn't know what to do with it. Instead we have to use a built-in javascript function, `concat`, to concatenate (stick together) everything into a long flat array:
 
 ```js
 var full_timeline = [].concat(consent_screen,
@@ -401,7 +401,7 @@ achieve that?
 - Figure out how to save the *complete* unfiltered data (not just the observation and production trials) to the server.
 - The code here is for the low-load linguistic version of the Ferdinand et al. (2019) experiment, with 1 object. How would you modify the code to do something with higher load, e.g. 2 or 3 objects, each with 2 labels? 
 - Ferdinand et al. (2019) also have a *non-linguistic* version of the same experiment, where rather than words labelling objects participants observed coloured marbles being drawn from a bag (there were no fancy animations, it was just a picture of a marble above a picture of a bag), then produced some more marble draws themselves by clicking on buttons labelled with images of coloured marbles. You don't have to implement it, but what sorts of changes would you need to make to the word learning code to implement this non-linguistic version? We'll see some of these tools in next week's practical.
-- [Optional, hard] Can you figure out how to use the `jsPsych.randomization.shuffleNoRepeats` function [documented here](https://www.jspsych.org/6.3/core_library/jspsych-randomization/#jspsychrandomizationshufflenorepeats) to do a version where observation and test trials for multiple objects are interspersed, but you never see the same object twice in a row? NB this will only work if you have 3+ different objects in the experiment - it's too hard for the code to find randomisations with no repeats if you have a small number of objects, and impossible if you only have one object, so the code will hang while  endlessly searching! If you decide to attempted this, you can look at [my thoughts on how it could be done](practical_session2_norepeat.md).
+- [Optional, hard] Can you figure out how to use the `jsPsych.randomization.shuffleNoRepeats` function [documented here](https://www.jspsych.org/6.3/core_library/jspsych-randomization/#jspsychrandomizationshufflenorepeats) to do a version where observation and test trials for multiple objects are interspersed, but you never see the same object twice in a row? NB this will only work if you have 3+ different objects in the experiment - it's too hard for the code to find randomisations with no repeats if you have a small number of objects, and impossible if you only have one object, so the code will hang while  endlessly searching! If you decide to attempt this, have a go yourself and then you can look at [my thoughts on how it could be done](practical_session2_norepeat.md).
 
 ## References
 
