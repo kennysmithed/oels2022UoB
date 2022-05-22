@@ -181,6 +181,10 @@ var full_timeline = [
 - Once again, have a look at the data that is displayed at the end of the experiment, and see if you can pinpoint where and how the participant's text response is recorded.
 - Can you change the experimental trial so participants have to provide two text responses (e.g. name the day and one of the follow-up questions Winter & Duffy asked, e.g. "Any observations, thoughts, ideas you want to share with us about the person you just saw or the question you were being asked?"? You could try adding this as a second question on the same screen or as a stand-alone question on an additional trial.
 
+## References
+
+- [Winter, B., & Duffy, S. E. (2020). Can Co-Speech Gestures Alone Carry the Mental Time Line?
+*Journal of Experimental Psychology: Learning, Memory, and Cognition, 46,* 1768-1781.](http://pure-oai.bham.ac.uk/ws/portalfiles/portal/96040354/winter_duffy_gesture_timeline_revisions_complete.pdf)
 ## Re-use
 
 All aspects of this work are licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

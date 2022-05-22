@@ -84,6 +84,10 @@ You might have noticed that in `grammaticality_judgments.js` we quite laboriousl
 
 You might be wondering what the advantage of using this slightly fancier code is, and/or thinking "I could just copy and paste the judgment trials and edit them directly, isn't that simpler?". It maybe is conceptually simpler to copy and paste simple code, but it's also more error prone, since it relies on you not making any mistakes in copying, pasting and editing the same little block of code over and over again. In general, if you find yourself doing a lot of copying, pasting and editing when writing code it's a sign that you are doing something manually that the computer could do for you automatically, more quickly and with less chance of errors. 
 
+## References
+
+- [Sprouse, J. (2011). A validation of Amazon Mechanical Turk for the collection of acceptability judgments in linguistic theory.
+*Behavior Research Methods, 43,* 155-167.](https://doi.org/10.3758/s13428-010-0039-7)
 
 ## Re-use
 
