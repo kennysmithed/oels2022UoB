@@ -46,8 +46,10 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 - *Technical content:* video and text stimuli; simple button-press, key-press and text responses; collecting reaction time data
 - [Reading part 1](reading_session1a.md)
 - [Programming task part 1](practical_session1a.md)
+- [Lecture slides part 1](slides/lecture_session1a.pdf)
 - [Reading part 2](reading_session1b.md)
 - [Programming task part 2](practical_session1b.md)
+- [Lecture slides part 2](slides/lecture_session1b.pdf)
 
 
 ### Thursday afternoon: Word learning / frequency learning
@@ -56,6 +58,7 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 - *Technical content:* randomisation within and across trials; using trial data for contingent trials; filtering and saving data 
 - [Reading](reading_session2.md)
 - [Programming task](practical_session2.md)
+- [Lecture slides](slides/lecture_session2.pdf)
 
 ### Friday morning: Audio stimuli
 
@@ -63,6 +66,7 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 - *Technical content:* Audio, trial data again, saving data trial by trial
 - [Reading](reading_session3.md)
 - [Programming task](practical_session3.md)
+- [Lecture slides](slides/lecture_session3.pdf)
 
 ### Friday afternoon: Confederate priming
 
@@ -70,6 +74,7 @@ Slightly ambitiously the plan is to cram a couple of basic experimental paradigm
 - *Technical content:*  Audio recording, more randomisation stuff, custom preload lists, reading trial lists from CSV
 - [Reading](reading_session4.md)
 - [Programming task](practical_session4.md)
+- [Lecture slides](slides/lecture_session4.pdf)
 
 ### Post-course materials: Getting your experiment online
 
